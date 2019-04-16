@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol AnimalCellDelegate: class {
-    func didTapNoiseButton(for animal: Animal)
-    }
+//protocol AnimalCellDelegate: class {
+//    func didTapNoiseButton(for animal: Animal)
+//    }
 
 class AnimalCell: UITableViewCell {
     
@@ -23,7 +23,11 @@ class AnimalCell: UITableViewCell {
         }
     }
     
-    weak var animalCellDelegate: AnimalCellDelegate?
+//    weak var animalCellDelegate: AnimalCellDelegate?
+    
+    //MARK: - Use Property with Closure instead of Delegation
+    // Closure accepts argument Animal and is Optional
+    var didTapNoiseButton: ((Animal)-> Void)?
     
     func populate(with animal: Animal) {
         
@@ -35,7 +39,10 @@ class AnimalCell: UITableViewCell {
     
     @IBAction func didTapNoise(_ sender: Any) {
         guard let unwrappedAnimal = animal else { return }
-        animalCellDelegate?.didTapNoiseButton(for: unwrappedAnimal)
+//        animalCellDelegate?.didTapNoiseButton(for: unwrappedAnimal)
+        
+        //MARK: - Access Optional Closure instead
+        didTapNoiseButton?(unwrappedAnimal)
     }
     
 }

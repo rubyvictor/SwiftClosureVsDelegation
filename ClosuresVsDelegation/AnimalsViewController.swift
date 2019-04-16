@@ -38,7 +38,13 @@ class AnimalsViewController: UITableViewController {
         
         let animal = animals[indexPath.row]
         
-        animalCell?.animalCellDelegate = self
+//        animalCell?.animalCellDelegate = self
+        
+        //MARK: - Access Closure Property instead of delegate
+        animalCell?.didTapNoiseButton = { [weak self] animal in
+            guard let alert = self?.alertService.alert(with: animal.noise) else { return }
+            self?.present(alert, animated: true)
+        }
         
         animalCell?.populate(with: animal)
         
@@ -46,11 +52,11 @@ class AnimalsViewController: UITableViewController {
     }
 }
 
-extension AnimalsViewController: AnimalCellDelegate {
-    func didTapNoiseButton(for animal: Animal) {
-        let alert = alertService.alert(with: animal.noise)
-        present(alert, animated: true)
-    }
-    
-    
-}
+//extension AnimalsViewController: AnimalCellDelegate {
+//    func didTapNoiseButton(for animal: Animal) {
+//        let alert = alertService.alert(with: animal.noise)
+//        present(alert, animated: true)
+//    }
+//
+//
+//}
