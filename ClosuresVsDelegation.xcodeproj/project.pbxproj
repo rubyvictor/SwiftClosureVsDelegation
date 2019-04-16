@@ -13,6 +13,10 @@
 		B1D4733C22659AE800E4B2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D4733B22659AE800E4B2F5 /* Assets.xcassets */; };
 		B1D4733F22659AE800E4B2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D4733D22659AE800E4B2F5 /* LaunchScreen.storyboard */; };
 		B1D4734A22659AE900E4B2F5 /* ClosuresVsDelegationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4734922659AE900E4B2F5 /* ClosuresVsDelegationTests.swift */; };
+		B1D4735522659B0900E4B2F5 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4735422659B0900E4B2F5 /* AnimalViewController.swift */; };
+		B1D4735722659B3200E4B2F5 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4735622659B3200E4B2F5 /* AnimalCell.swift */; };
+		B1D4735922659B5900E4B2F5 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4735822659B5900E4B2F5 /* Animal.swift */; };
+		B1D4735B22659B9E00E4B2F5 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4735A22659B9E00E4B2F5 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		B1D4734522659AE900E4B2F5 /* ClosuresVsDelegationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClosuresVsDelegationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D4734922659AE900E4B2F5 /* ClosuresVsDelegationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresVsDelegationTests.swift; sourceTree = "<group>"; };
 		B1D4734B22659AE900E4B2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D4735422659B0900E4B2F5 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		B1D4735622659B3200E4B2F5 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		B1D4735822659B5900E4B2F5 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		B1D4735A22659B9E00E4B2F5 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 				B1D4733B22659AE800E4B2F5 /* Assets.xcassets */,
 				B1D4733D22659AE800E4B2F5 /* LaunchScreen.storyboard */,
 				B1D4734022659AE800E4B2F5 /* Info.plist */,
+				B1D4735422659B0900E4B2F5 /* AnimalViewController.swift */,
+				B1D4735622659B3200E4B2F5 /* AnimalCell.swift */,
+				B1D4735822659B5900E4B2F5 /* Animal.swift */,
+				B1D4735A22659B9E00E4B2F5 /* AlertService.swift */,
 			);
 			path = ClosuresVsDelegation;
 			sourceTree = "<group>";
@@ -198,7 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D4733722659AE700E4B2F5 /* ViewController.swift in Sources */,
+				B1D4735722659B3200E4B2F5 /* AnimalCell.swift in Sources */,
+				B1D4735522659B0900E4B2F5 /* AnimalViewController.swift in Sources */,
 				B1D4733522659AE700E4B2F5 /* AppDelegate.swift in Sources */,
+				B1D4735B22659B9E00E4B2F5 /* AlertService.swift in Sources */,
+				B1D4735922659B5900E4B2F5 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
