@@ -17,7 +17,11 @@ class AnimalCell: UITableViewCell {
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
-    var animal: Animal?
+    var animal: Animal? {
+        didSet {
+            nameLabel.textColor = .white
+        }
+    }
     
     weak var animalCellDelegate: AnimalCellDelegate?
     

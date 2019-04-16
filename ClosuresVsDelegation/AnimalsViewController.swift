@@ -18,6 +18,12 @@ class AnimalsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
+    }
+
+    fileprivate func setupUI() {
+        tableView.backgroundColor = .black
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
